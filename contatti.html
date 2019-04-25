@@ -7,68 +7,74 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <style>
-body {font-family: "Lato", sans-serif}
-.mySlides {display: none}
+  body {
+    font-family: "Lato", sans-serif
+  }
+
+  .mySlides {
+    display: none
+  }
 </style>
+
 <body>
 
-<!-- Navbar -->
-<div class="w3-top">
-  <div class="w3-bar w3-black w3-card">
-    <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-    <a href="history.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">STORIA</a>
-    <a href="dire.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DIRETTIVO</a>
-    <a href="stva.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Stra Val Esturo</a>
-    <a href="mem.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Memorial "Davide Bertoldo"</a>
-    <a href="contatti.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATTI</a>
-    <div class="w3-dropdown-hover w3-hide-small">
-      <button class="w3-padding-large w3-button" title="More">SQUADRE<i class="fa fa-caret-down"></i></button>
-      <div class="w3-dropdown-content w3-bar-block w3-card-4">
-        <a href="#" class="w3-bar-item w3-button">UNDER 8</a>
-        <a href="#" class="w3-bar-item w3-button">UNDER 10</a>
-        <a href="#" class="w3-bar-item w3-button">UNDER 12</a>
-        <a href="#" class="w3-bar-item w3-button">UNDER 14</a>
-        <a href="#" class="w3-bar-item w3-button">UNDER 16</a>
+  <!-- Navbar -->
+  <div class="w3-top">
+    <div class="w3-bar w3-black w3-card">
+      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
+      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
+      <a href="history.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">STORIA</a>
+      <a href="dire.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DIRETTIVO</a>
+      <a href="stva.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Stra Val Esturo</a>
+      <a href="mem.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Memorial "Davide Bertoldo"</a>
+      <a href="contatti.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATTI</a>
+      <div class="w3-dropdown-hover w3-hide-small">
+        <button class="w3-padding-large w3-button" title="More">SQUADRE<i class="fa fa-caret-down"></i></button>
+        <div class="w3-dropdown-content w3-bar-block w3-card-4">
+          <a href="8.html" class="w3-bar-item w3-button">UNDER 8</a>
+          <a href="10.html" class="w3-bar-item w3-button">UNDER 10</a>
+          <a href="12.html" class="w3-bar-item w3-button">UNDER 12</a>
+          <a href="14.html" class="w3-bar-item w3-button">UNDER 14</a>
+          <a href="16.html" class="w3-bar-item w3-button">UNDER 16</a>
+        </div>
       </div>
+      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
     </div>
-    <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
   </div>
-</div>
 
-<!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-<div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-  <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
-  <a href="history.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">STORIA</a>
-  <a href="dire.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DIRETTIVO</a>
-  <a href="stva.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Stra Val Esturo</a>
-  <a href="mem.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Memorial "Davide Bertoldo"</a>
-  <a href="contatti.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTATTI</a>
-  <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-</div>
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
+    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
+    <a href="history.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">STORIA</a>
+    <a href="dire.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DIRETTIVO</a>
+    <a href="stva.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Stra Val Esturo</a>
+    <a href="mem.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Memorial "Davide Bertoldo"</a>
+    <a href="contatti.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTATTI</a>
+    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
+  </div>
 
-<!-- Page content -->
-<div class="w3-content" style="max-width:2000px;margin-top:46px">
-  <!-- The Contact Section -->
-  <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
-    <h2 class="w3-wide w3-center">CONTATTI</h2>
-    <div class="w3-row w3-padding-32">
-      <div class="w3-col m6 w3-large w3-margin-bottom" style="width: auto;">
-        <i class="fa fa-map-marker" style="width:30px"></i> Via Paschero 7, Demonte, Cuneo, 12014, Italia<br>
-        <i class="fa fa-phone" style="width:30px"></i> TELEFONO: <br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email: info@vbcvallestura.it<br>
-        <i class="fa fa-envelope" style="width:30px"> </i> Email Stra Val Esturo: stravalesturo@gmail.com<br>
-        <br><br>
-        <h2 class="w3-wide w3-center">Indicazioni</h2>
-        <p class="ind" align="justify">Appena giunti sulla piazza Renzo Spada
-          svoltare a destra e proseguire costeggiando l’ufficio postale per
-          poi raggiungere la sede della croce rossa, a questo punto
-          svoltare a destra e proseguire su via paschero fino a raggiungere,
-          sulla sinistra, il palazzeto dello sport. Siete arrivati, la sede
-          dell’associazione è all’interno del palazzetto. </p>
+  <!-- Page content -->
+  <div class="w3-content" style="max-width:2000px;margin-top:46px">
+    <!-- The Contact Section -->
+    <div class="w3-container w3-content w3-padding-64" style="max-width:800px" id="contact">
+      <h2 class="w3-wide w3-center">CONTATTI</h2>
+      <div class="w3-row w3-padding-32">
+        <div class="w3-col m6 w3-large w3-margin-bottom" style="width: auto;">
+          <i class="fa fa-map-marker" style="width:30px"></i> Via Paschero 7, Demonte, Cuneo, 12014, Italia<br>
+          <!--<i class="fa fa-phone" style="width:30px"></i> TELEFONO: <br>-->
+          <i class="fa fa-envelope" style="width:30px"> </i> Email: info@vbcvallestura.it<br>
+          <i class="fa fa-envelope" style="width:30px"> </i> Email Stra Val Esturo: stravalesturo@gmail.com<br>
+          <br><br>
+          <h2 class="w3-wide w3-center">Indicazioni</h2>
+          <p class="ind" align="justify">Appena giunti sulla piazza Renzo Spada
+            svoltare a destra e proseguire costeggiando l’ufficio postale per
+            poi raggiungere la sede della croce rossa, a questo punto
+            svoltare a destra e proseguire su via paschero fino a raggiungere,
+            sulla sinistra, il palazzeto dello sport. Siete arrivati, la sede
+            dell’associazione è all’interno del palazzetto. </p>
 
-      </div>
-      <!--
+        </div>
+        <!--
       <div class="w3-col m6">
         <form action="/action_page.php" target="_blank">
           <div class="w3-row-padding" style="margin:0 -16px 8px -16px">
@@ -83,61 +89,64 @@ body {font-family: "Lato", sans-serif}
           <button class="w3-button w3-black w3-section w3-right" type="submit">SEND</button>
         </form>
       </div>-->
+      </div>
     </div>
+
+    <!-- End Page Content -->
   </div>
 
-<!-- End Page Content -->
-</div>
+  <!-- Image of location/map -->
+  <img src="image\carta.PNG" class="w3-image w3-greyscale-min" style="width:100%">
 
-<!-- Image of location/map -->
-<img src="image\carta.PNG" class="w3-image w3-greyscale-min" style="width:100%">
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <a href="https://www.facebook.com/vbc.vallestura.1" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/30ore_demonte/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <!--  <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>-->
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
 
-<!-- Footer -->
-<footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-  <i class="fa fa-facebook-official w3-hover-opacity"></i>
-  <i class="fa fa-instagram w3-hover-opacity"></i>
-  <i class="fa fa-snapchat w3-hover-opacity"></i>
-  <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-  <i class="fa fa-twitter w3-hover-opacity"></i>
-  <i class="fa fa-linkedin w3-hover-opacity"></i>
-  <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-</footer>
+  <script>
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
 
-<script>
-// Automatic Slideshow - change image every 4 seconds
-var myIndex = 0;
-carousel();
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
+      }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
 
-function carousel() {
-  var i;
-  var x = document.getElementsByClassName("mySlides");
-  for (i = 0; i < x.length; i++) {
-    x[i].style.display = "none";
-  }
-  myIndex++;
-  if (myIndex > x.length) {myIndex = 1}
-  x[myIndex-1].style.display = "block";
-  setTimeout(carousel, 4000);
-}
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
+      }
+    }
 
-// Used to toggle the menu on small screens when clicking on the menu button
-function myFunction() {
-  var x = document.getElementById("navDemo");
-  if (x.className.indexOf("w3-show") == -1) {
-    x.className += " w3-show";
-  } else {
-    x.className = x.className.replace(" w3-show", "");
-  }
-}
-
-// When the user clicks anywhere outside of the modal, close it
-var modal = document.getElementById('ticketModal');
-window.onclick = function(event) {
-  if (event.target == modal) {
-    modal.style.display = "none";
-  }
-}
-</script>
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 
 </body>
+
 </html>
