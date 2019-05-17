@@ -7,6 +7,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="assets/script.js" charset="utf-8"></script>
 <style>
   body {
     font-family: "Lato", sans-serif
@@ -58,158 +59,49 @@
     <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
       <h2 class="w3-wide">V.B.C. Valle Stura A.S.D.</h2>
       <h3 class="w3-opacity"><i>Stra Val Esturo</i></h3>
-      <div class="container">
-    <div class="mySlides">
-      <div class="numbertext">1 / 12</div>
-      <img src="image\g13.jpg" style="width:100%">
+
+      <div class="slideshow">
+        <button type="button" name="button" onclick="prev()" class="button button2">
+          <b><</b>
+        </button>
+        <img src="image/g1.jpg" alt="" id="slider" width="80%" height="20%" class="sli">
+        <button type="button" name="button" onclick="next()" class="button button2">
+          <b>></b>
+        </button>
+      </div>
+<br><br><br><br><br>
+<br><br><br><br>
+      <h3 class="w3-opacity"><i>Iscrizioni</i></h3>
+      <button onclick="window.open('https://drive.google.com/open?id=15r_A5jjvyOqwbQTCR69e_5eyXoFZ_wMS','_blank');" class="buttonD button2">
+        <img src="image/volley.jpg" alt="#" class="insta" align="center">
+        <p>volley</p>
+      </button>
+      <button onclick="window.open('https://drive.google.com/open?id=1W3YhDB6fytDKKQkaPwQnXhxtqliiLJCH','_blank');" class="buttonD button2">
+        <img src="image/calcetto.jpg" alt="#" class="insta" align="center">
+        <p>calcio a 5</p>
+      </button>
+      <button onclick="window.open('https://drive.google.com/open?id=1Dt21D9OLx2ai2mfStzR7F0EGq1FPEvyx','_blank');" class="buttonD button2">
+        <img src="image/calcetto.jpg" alt="#" class="insta" align="center">
+        <p>calcio a 5 <br> femminile</p>
+      </button>
+      <button onclick="window.open('https://drive.google.com/open?id=1MmJeQpXzdae504QG625kIjpvyk83ysPn','_blank');" class="buttonD button2">
+        <img src="image/iscri.png" alt="#" class="insta" align="center">
+        <p>iscrizioni</p>
+      </button>
+      <img src="image\volantino.jpeg" alt="" class="ime" style="position:relative;">
+      <!-- End Page Content -->
     </div>
 
-    <div class="mySlides">
-      <div class="numbertext">2 / 12</div>
-      <img src="image\g2.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">3 / 12</div>
-      <img src="image\g3.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">4 / 12</div>
-      <img src="image\g4.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">5 / 12</div>
-      <img src="image\g5.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">6 / 12</div>
-      <img src="image\g6.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">7 / 12</div>
-      <img src="image\g7.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">8 / 12</div>
-      <img src="image\g8.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">9 / 12</div>
-      <img src="image\g9.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">10 / 12</div>
-      <img src="image\g10.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">11 / 12</div>
-      <img src="image\g11.jpg" style="width:100%">
-    </div>
-
-    <div class="mySlides">
-      <div class="numbertext">12 / 12</div>
-      <img src="image\g12.jpg" style="width:100%">
-    </div>
-
-    <a class="prev" onclick="plusSlides(-1)" style="float: left;">❮</a>
-    <a class="next" onclick="plusSlides(1)">❯</a>
-    </div>
-    <!-- End Page Content -->
-  </div>
-  
-
-  <!-- Footer -->
-  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-    <a href="https://www.facebook.com/vbc.vallestura.1" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-    <a href="https://www.instagram.com/30ore_demonte/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-    <!--  <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <!-- Footer -->
+    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+      <a href="https://www.facebook.com/vbc.vallestura.1" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+      <a href="https://www.instagram.com/30ore_demonte/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <!--  <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>-->
-    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-  </footer>
-
-  <script>
-    // Automatic Slideshow - change image every 4 seconds
-    var myIndex = 0;
-    carousel();
-
-    function carousel() {
-      var i;
-      var x = document.getElementsByClassName("mySlides");
-      for (i = 0; i < x.length; i++) {
-        x[i].style.display = "none";
-      }
-      myIndex++;
-      if (myIndex > x.length) {
-        myIndex = 1
-      }
-      x[myIndex - 1].style.display = "block";
-      setTimeout(carousel, 4000);
-    }
-
-    // Used to toggle the menu on small screens when clicking on the menu button
-    function myFunction() {
-      var x = document.getElementById("navDemo");
-      if (x.className.indexOf("w3-show") == -1) {
-        x.className += " w3-show";
-      } else {
-        x.className = x.className.replace(" w3-show", "");
-      }
-    }
-
-    // When the user clicks anywhere outside of the modal, close it
-    var modal = document.getElementById('ticketModal');
-    window.onclick = function(event) {
-      if (event.target == modal) {
-        modal.style.display = "none";
-      }
-    }
-
-
-
-
-    var slideIndex = 1;
-      showSlides(slideIndex);
-
-      function plusSlides(n) {
-        showSlides(slideIndex += n);
-      }
-
-      function currentSlide(n) {
-        showSlides(slideIndex = n);
-      }
-
-      function showSlides(n) {
-        var i;
-        var slides = document.getElementsByClassName("mySlides");
-        var dots = document.getElementsByClassName("demo");
-        var captionText = document.getElementById("caption");
-        if (n > slides.length) {
-          slideIndex = 1
-        }
-        if (n < 1) {
-          slideIndex = slides.length
-        }
-        for (i = 0; i < slides.length; i++) {
-          slides[i].style.display = "none";
-        }
-        for (i = 0; i < dots.length; i++) {
-          dots[i].className = dots[i].className.replace(" active", "");
-        }
-        slides[slideIndex - 1].style.display = "block";
-        dots[slideIndex - 1].className += " active";
-        captionText.innerHTML = dots[slideIndex - 1].alt;
-      }
-  </script>
+      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+    </footer>
 
 </body>
 
