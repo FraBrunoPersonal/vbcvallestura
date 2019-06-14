@@ -281,7 +281,7 @@ img.sli {
 }
 
 .slideshow{
-    /*padding-left:10%;*/
+    padding-left:2%;
     position: relative;
     left: 50%;
     transform: translateX(-50%);
