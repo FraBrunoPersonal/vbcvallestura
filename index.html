@@ -6,6 +6,7 @@
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="assets/styleNews.css">
 <script src="assets/script.js" charset="utf-8"></script>
 <style>
   body {
@@ -42,7 +43,7 @@
     </div>
   </div>
 
-  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links)
+  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
   <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
     <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
     <a href="history.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">STORIA</a>
@@ -50,8 +51,12 @@
     <a href="stva.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Stra Val Esturo</a>
     <a href="mem.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Memorial "Davide Bertoldo"</a>
     <a href="contatti.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTATTI</a>
-    <a href="#" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">MERCH</a>
-  </div> -->
+    <a href="8.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 8</a>
+    <a href="10.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 10</a>
+    <a href="12.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 12</a>
+    <a href="14.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 14</a>
+    <a href="16.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 16</a>
+  </div>
 
   <!-- Page content -->
   <div class="w3-content" style="max-width:2000px;margin-top:46px">
@@ -93,57 +98,123 @@
         anno la manifestazione porta qualche torneo nuovo), portano un sacco di persone a Demonte.
       </p>
 
-      <!-- End Page Content -->
     </div>
+    <div id="wrapper">
+      <div id="prima">
+        <br>
+        <h1 align="center">NEWS</h1>
+        <button class="bu bu1" onclick="change()"> <b>Discover</b> </button>
+        <img src="image/news.jpg" alt="" id="news">
+      </div>
+      <div class="screen hidden" id="dopo">
 
-    <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-      <a href="https://www.facebook.com/vbc.vallestura.1" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-      <a href="https://www.instagram.com/30ore_demonte/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
-      <!--  <i class="fa fa-snapchat w3-hover-opacity"></i>
+        <div class="list">
+          <div class="item">
+            <div class="img">
+              <img src="image/mod_reg.jpg" alt="" class="foto">
+            </div>
+            <span class="ne">
+              <p style="color:#ff3838; font-size:1.5em;"> <b>MODIFICA REGOLAMENTO</b></p>
+            </span>
+            <span class="ne">
+              <p style="font-size:1.1em;" align="justify"><b><u>ATTENZIONE </u></b><br>
+                È stato modificato il regolamento del torneo di pallavolo della trenta ore. <br>
+                Per visionare le modifiche effettuate visionare l'apposita <a href="http://www.vbcvallestura.it/stva.html" target="_blank">sezione</a> del sito.
+              </p>
+            </span>
+          </div>
+
+          <div class="item">
+            <div class="img">
+              <img src="image/volantino.jpg" alt="" class="foto">
+            </div>
+            <span class="ne">
+              <p style="color:#ff3838; font-size:1.5em;">
+                <b>STRA VAL ESTURO 2019</b>
+              </p>
+            </span>
+            <span class="ne">
+              <p align="justify">
+                Il 6/7 luglio vi aspettiamo numerosi per la 16 (+1) edizione della 30/24 ore di demonte.
+                Pallavolo, calcio a 5 maschile e femminile, pentaque: questi i tornei presenti quest'anno.
+                Presente anche la serata con il dj il sabato.
+              </p>
+            </span>
+          </div>
+
+          <div class="item">
+            <div class="img"></div>
+            <span class="ne">
+              <p style="color:#ff3838; font-size:1.5em;">
+                <b>Cena di fine stagione</b>
+              </p>
+            </span>
+            <span class="ne">
+              <p align="justify">Venerdì 31 alla Bociofila di demonte si è tenuta la cena di chiusura della stagione. <br>Oltre 130 persone presenti.
+                Sono state premiate tutte le squadre giovanili che hanno
+                preso parte ai vari campionati di categoria
+              </p>
+            </span>
+          </div>
+
+        </div>
+        <button class="bu bu2" onclick="change()"> <b>EXIT</b> </button>
+      </div>
+    </div>
+    <!-- End Page Content -->
+  </div>
+<br><br><br><br><br>
+  <!-- Footer -->
+  <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
+    <p class="w3-medium">V.B.C. VALLE STURA A.S.D.<br>Via Paschero, 7 12014 DEMONTE CN
+      <br> C.F. 96040690040 P.IVA 02930590043
+    </p>
+    <a href="https://www.facebook.com/vbc.vallestura.1" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
+    <a href="https://www.instagram.com/30ore_demonte/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+    <!--  <i class="fa fa-snapchat w3-hover-opacity"></i>
       <i class="fa fa-pinterest-p w3-hover-opacity"></i>
       <i class="fa fa-twitter w3-hover-opacity"></i>
       <i class="fa fa-linkedin w3-hover-opacity"></i>-->
-      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
-    </footer>
+    <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+  </footer>
 
-    <script type="text/javascript">
-      // Automatic Slideshow - change image every 4 seconds
-      var myIndex = 0;
-      carousel();
+  <script type="text/javascript">
+    // Automatic Slideshow - change image every 4 seconds
+    var myIndex = 0;
+    carousel();
 
-      function carousel() {
-        var i;
-        var x = document.getElementsByClassName("mySlides");
-        for (i = 0; i < x.length; i++) {
-          x[i].style.display = "none";
-        }
-        myIndex++;
-        if (myIndex > x.length) {
-          myIndex = 1
-        }
-        x[myIndex - 1].style.display = "block";
-        setTimeout(carousel, 4000);
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
       }
-
-      // Used to toggle the menu on small screens when clicking on the menu button
-      function myFunction() {
-        var x = document.getElementById("navDemo");
-        if (x.className.indexOf("w3-show") == -1) {
-          x.className += " w3-show";
-        } else {
-          x.className = x.className.replace(" w3-show", "");
-        }
+      myIndex++;
+      if (myIndex > x.length) {
+        myIndex = 1
       }
+      x[myIndex - 1].style.display = "block";
+      setTimeout(carousel, 4000);
+    }
 
-      // When the user clicks anywhere outside of the modal, close it
-      var modal = document.getElementById('ticketModal');
-      window.onclick = function(event) {
-        if (event.target == modal) {
-          modal.style.display = "none";
-        }
+    // Used to toggle the menu on small screens when clicking on the menu button
+    function myFunction() {
+      var x = document.getElementById("navDemo");
+      if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+      } else {
+        x.className = x.className.replace(" w3-show", "");
       }
-    </script>
+    }
+
+    // When the user clicks anywhere outside of the modal, close it
+    var modal = document.getElementById('ticketModal');
+    window.onclick = function(event) {
+      if (event.target == modal) {
+        modal.style.display = "none";
+      }
+    }
+  </script>
 </body>
 
 </html>
