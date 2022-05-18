@@ -40,7 +40,7 @@ div.screen {
 .item .img {
   float: left;
   width: 96px;
-  height: 81px;
+  height: 100px;
   margin-left: -113px;
 }
 
@@ -126,4 +126,10 @@ div.screen {
    position: relative;
    left: 50%;
    transform: translateX(-50%);
+}
+
+@media screen and (max-width: 500px) {
+  #wrapper{
+    display: none;
+  }
 }
