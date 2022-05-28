@@ -101,6 +101,12 @@ padding-bottom: 5px;
   box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 0px 0px 0 rgba(0, 0, 0, 0.19);
 }
 
+.shadowRed {
+  /*border: 1px solid;*/
+  background-color: white;
+  box-shadow: 0 8px 16px 0 rgb(255, 0, 0), 0 0px 0px 0 rgb(255, 0, 0);
+}
+
 .testo {
   padding: 10px;
 }
