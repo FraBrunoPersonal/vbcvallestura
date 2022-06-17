@@ -1,367 +1,651 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>vbcvallestura</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>vbcvallestura</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-<link rel="stylesheet" href="assets/style.css">
-<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-<script src="assets/script.js" charset="utf-8"></script>
-<style>
-  body {
-    font-family: "Lato", sans-serif
-  }
+  <link rel="stylesheet" href="assets/style.css" />
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lato" />
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+  />
+  <script
+    src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"
+  ></script>
+  <script src="assets/script.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="assets/style_zoom.css" />
+  <style>
+    body {
+      font-family: "Lato", sans-serif;
+    }
 
-  .mySlides {
-    display: none
-  }
-</style>
+    .mySlides {
+      display: none;
+    }
+  </style>
 
-<body>
-  <!-- Navbar -->
-  <div class="w3-top">
-    <div class="w3-bar w3-black w3-card">
-      <a class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right" href="javascript:void(0)" onclick="myFunction()" title="Toggle Navigation Menu"><i class="fa fa-bars"></i></a>
-      <a href="index.html" class="w3-bar-item w3-button w3-padding-large">HOME</a>
-      <a href="history.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">STORIA</a>
-      <a href="dire.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">DIRETTIVO</a>
-      <a href="stva.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Stra Val Esturo</a>
-      <a href="mem.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">Memorial "Davide Bertoldo"</a>
-      <a href="contatti.html" class="w3-bar-item w3-button w3-padding-large w3-hide-small">CONTATTI</a>
-      <div class="w3-dropdown-hover w3-hide-small">
-        <button class="w3-padding-large w3-button" title="More">SQUADRE<i class="fa fa-caret-down"></i></button>
-        <div class="w3-dropdown-content w3-bar-block w3-card-4">
-          <a href="8.html" class="w3-bar-item w3-button">UNDER 8</a>
-          <a href="10.html" class="w3-bar-item w3-button">UNDER 10</a>
-          <a href="12.html" class="w3-bar-item w3-button">UNDER 12</a>
-          <a href="14.html" class="w3-bar-item w3-button">UNDER 14</a>
-          <a href="16.html" class="w3-bar-item w3-button">UNDER 16</a>
+  <body>
+    <!-- Navbar -->
+    <div class="w3-top">
+      <div class="w3-bar w3-black w3-card">
+        <a
+          class="w3-bar-item w3-button w3-padding-large w3-hide-medium w3-hide-large w3-right"
+          href="javascript:void(0)"
+          onclick="myFunction()"
+          title="Toggle Navigation Menu"
+          ><i class="fa fa-bars"></i
+        ></a>
+        <a href="index.html" class="w3-bar-item w3-button w3-padding-large"
+          >HOME</a
+        >
+        <a
+          href="history.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >STORIA</a
+        >
+        <a
+          href="dire.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >DIRETTIVO</a
+        >
+        <a
+          href="stva.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >Stra Val Esturo</a
+        >
+        <a
+          href="mem.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >Memorial "Davide Bertoldo"</a
+        >
+        <a
+          href="contatti.html"
+          class="w3-bar-item w3-button w3-padding-large w3-hide-small"
+          >CONTATTI</a
+        >
+        <div class="w3-dropdown-hover w3-hide-small">
+          <button class="w3-padding-large w3-button" title="More">
+            SQUADRE<i class="fa fa-caret-down"></i>
+          </button>
+          <div class="w3-dropdown-content w3-bar-block w3-card-4">
+            <a href="8.html" class="w3-bar-item w3-button">UNDER 8</a>
+            <a href="10.html" class="w3-bar-item w3-button">UNDER 10</a>
+            <a href="12.html" class="w3-bar-item w3-button">UNDER 12</a>
+            <a href="14.html" class="w3-bar-item w3-button">UNDER 14</a>
+            <a href="16.html" class="w3-bar-item w3-button">UNDER 16</a>
+          </div>
         </div>
+        <a
+          href="javascript:void(0)"
+          class="w3-padding-large w3-hover-red w3-hide-small w3-right"
+          ><i class="fa fa-search"></i
+        ></a>
       </div>
-      <a href="javascript:void(0)" class="w3-padding-large w3-hover-red w3-hide-small w3-right"><i class="fa fa-search"></i></a>
     </div>
-  </div>
 
-  <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
-  <div id="navDemo" class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top" style="margin-top:46px">
-    <a href="index.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">HOME</a>
-    <a href="history.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">STORIA</a>
-    <a href="dire.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">DIRETTIVO</a>
-    <a href="stva.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Stra Val Esturo</a>
-    <a href="mem.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">Memorial "Davide Bertoldo"</a>
-    <a href="contatti.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">CONTATTI</a>
-    <a href="8.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 8</a>
-    <a href="10.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 10</a>
-    <a href="12.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 12</a>
-    <a href="14.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 14</a>
-    <a href="16.html" class="w3-bar-item w3-button w3-padding-large" onclick="myFunction()">UNDER 16</a>
-  </div>
+    <!-- Navbar on small screens (remove the onclick attribute if you want the navbar to always show on top of the content when clicking on the links) -->
+    <div
+      id="navDemo"
+      class="w3-bar-block w3-black w3-hide w3-hide-large w3-hide-medium w3-top"
+      style="margin-top: 46px"
+    >
+      <a
+        href="index.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >HOME</a
+      >
+      <a
+        href="history.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >STORIA</a
+      >
+      <a
+        href="dire.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >DIRETTIVO</a
+      >
+      <a
+        href="stva.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >Stra Val Esturo</a
+      >
+      <a
+        href="mem.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >Memorial "Davide Bertoldo"</a
+      >
+      <a
+        href="contatti.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >CONTATTI</a
+      >
+      <a
+        href="8.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >UNDER 8</a
+      >
+      <a
+        href="10.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >UNDER 10</a
+      >
+      <a
+        href="12.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >UNDER 12</a
+      >
+      <a
+        href="14.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >UNDER 14</a
+      >
+      <a
+        href="16.html"
+        class="w3-bar-item w3-button w3-padding-large"
+        onclick="myFunction()"
+        >UNDER 16</a
+      >
+    </div>
 
-  <!-- Page content -->
-  <div class="w3-content" style="max-width:2000px;margin-top:46px">
-    <div class="w3-container w3-content w3-center w3-padding-64" style="max-width:800px" id="band">
-      <h2 class="w3-wide">V.B.C. Valle Stura A.S.D.</h2>
-      <h1 class="w3-opacity"><i>Stra Val Esturo</i></h1>
-      <!--
+    <!-- Page content -->
+    <div class="w3-content" style="max-width: 2000px; margin-top: 46px">
+      <div
+        class="w3-container w3-content w3-center w3-padding-64"
+        style="max-width: 800px"
+        id="band"
+      >
+        <h2 class="w3-wide">V.B.C. Valle Stura A.S.D.</h2>
+        <h1 class="w3-opacity"><i>Stra Val Esturo</i></h1>
+        <!--
         Sponsor
       -->
-      <div style="padding-top: 5%; padding-bottom: 5%; position:relative;">
-        <div class="shadow" style="position:relative;">
-          <div class="testo" style="position:relative;">
-            <h2 class="w3-opacity">In collaborazione con</h2>
-            <div class="w3-container">
+        <div style="padding-top: 5%; padding-bottom: 5%; position: relative">
+          <div class="shadow" style="position: relative">
+            <div class="testo" style="position: relative">
+              <h2 class="w3-opacity">In collaborazione con</h2>
+              <div class="w3-container">
+                <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+                <!--Partner Istituzionali-->
+                <hr width="100%" />
+                <div class="w3-row-padding">
+                  <h3 class="w3-opacity">Partner Istituzionali</h3>
+                  <!--Comune di Demonte-->
+                  <div class="w3-col s6">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\ComuneDiDemonte.png"
+                      style="height: 90px; width: 90px"
+                    />
+                    <h5 class="w3-opacity">
+                      <i> Comune di Demonte </i>
+                    </h5>
+                  </div>
+                  <!--Unione Montana-->
+                  <div class="w3-col s6">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\UnioneMontanaValleStura.png"
+                      style="height: 90px; width: 90px"
+                    />
+                    <h5 class="w3-opacity">
+                      <i> Unione Montana Valle Stura </i>
+                    </h5>
+                  </div>
+                </div>
 
-              <!-- ------------------------------------------------------------------------------------------------------------------------ -->
-              <!--Partner Istituzionali-->
-              <hr width="100%">
-              <div class="w3-row-padding">
-                <h3 class="w3-opacity">Partner Istituzionali</h3>            
-                <!--Comune di Demonte-->
-                <div class="w3-col s6">
-                  <img src="image\LoghiSponsorStraValEsturo\ComuneDiDemonte.png" style="height: 90px; width: 90px;">
-                  <h5 class="w3-opacity">
-                    <i>
-                      Comune di Demonte
-                    </i>
-                  </h5>   
+                <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+                <!--Partner Tecnici-->
+                <hr width="100%" />
+                <div class="w3-row-padding">
+                  <h3 class="w3-opacity">Partner Tecnici</h3>
+                  <!--Gruppo Montello-->
+                  <div class="w3-col s6">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\gruppo_montello_logo_200x200.png"
+                      style="height: 90px; width: 90px"
+                    />
+                    <h4
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Gruppo Montello </i>
+                    </h4>
+                  </div>
+                  <!--Il Podio Sport-->
+                  <div class="w3-col s6">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\IlPodioSport_200x200.png"
+                      style="height: 90px; width: 90px"
+                    />
+                    <h4
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Il Podio Sport </i>
+                    </h4>
+                  </div>
                 </div>
-                <!--Unione Montana-->
-                <div class="w3-col s6">
-                  <img src="image\LoghiSponsorStraValEsturo\UnioneMontanaValleStura.png" style="height: 90px; width: 90px;">
-                  <h5 class="w3-opacity">
-                    <i>
-                      Unione Montana Valle Stura
-                    </i>
-                  </h5>
-                </div>
-              </div>
 
-              <!-- ------------------------------------------------------------------------------------------------------------------------ -->
-              <!--Partner Tecnici-->
-              <hr width="100%">
-              <div class="w3-row-padding">
-                <h3 class="w3-opacity">Partner Tecnici</h3>
-                <!--Gruppo Montello-->
-                <div class="w3-col s6">
-                  <img src="image\LoghiSponsorStraValEsturo\gruppo_montello_logo_200x200.png" style="height: 90px; width: 90px;">
-                  <h4 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      Gruppo Montello
-                    </i>
-                  </h4>   
-                </div> 
-                <!--Il Podio Sport-->
-                <div class="w3-col s6">
-                  <img src="image\LoghiSponsorStraValEsturo\IlPodioSport_200x200.png" style="height: 90px; width: 90px;">
-                  <h4 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      Il Podio Sport
-                    </i>
-                  </h4>
-                </div>
-              </div>
-                
-              <!-- ------------------------------------------------------------------------------------------------------------------------ -->
-              <style>
-                .zoom {
-                  transition: transform .5s
-                }
+                <!-- ------------------------------------------------------------------------------------------------------------------------ -->
+                <style>
+                  .zoom {
+                    transition: transform 0.5s;
+                  }
 
-                .zoom:hover {
-                  -ms-transform: scale(5); /* IE 9 */
-                  -webkit-transform: scale(5); /* Safari 3-8 */
-                  transform: scale(5); 
-                }
-              </style>
-              <!--Partner Commerciali 1-->
-              <hr width="100%">
-              <div class="w3-row-padding">
-                <!--Prima riga 1-->
-                <h3 class="w3-opacity">Partner Commerciali</h3>
-                <!-- Orso Mine Pub -->
-                <div class="w3-col s4">
-                  <img class="zoom" src="image\LoghiSponsorStraValEsturo\OrsoMinePub_200x200.png" style="height: 70px; max-width: 70px;">
-                  <h5 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      Orso Mine Pub
-                    </i>
-                  </h5>   
-                </div> 
-                <!-- ] -->
-                <div class="w3-col s4">
-                  <img class="zoom" src="image\LoghiSponsorStraValEsturo\PasticceriaAgnello_200x200.png" style="height: 70px; width: 70px;">
-                  <h5 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      Pasticceria Agnello
-                    </i>
-                  </h5>
+                  .zoom:hover {
+                    -ms-transform: scale(5); /* IE 9 */
+                    -webkit-transform: scale(5); /* Safari 3-8 */
+                    transform: scale(5);
+                  }
+                </style>
+                <!--Partner Commerciali 1-->
+                <hr width="100%" />
+                <div class="w3-row-padding">
+                  <!--Prima riga 1-->
+                  <h3 class="w3-opacity">Partner Commerciali</h3>
+                  <!-- E++ -->
+                  <div class="w3-col s4">
+                    <!--
+                    Inizio zoom
+                    -->
+                    <img
+                      id="myImg_1_1"
+                      src="image\LoghiSponsorStraValEsturo\Epp_1000x1000.png"
+                      width="70px"
+                      height="70px"
+                    />
+                    <div id="myModal_1_1" class="modal_1_1">
+                      <img class="modal-content_1_1" id="img01_1_1" />
+                    </div>
+                    <!--
+                    fine zoom
+                    -->
+                    <h5
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i>E++</i>
+                    </h5>
+                  </div>
+                  <!-- Demonte Servizi -->
+                  <div class="w3-col s4">
+                    <!--
+                    Inizio zoom
+                    -->
+                    <img
+                      id="myImg_1_2"
+                      src="image\LoghiSponsorStraValEsturo\DemonteServizi_1000x1000.png"
+                      width="70px"
+                      height="70px"
+                    />
+                    <div id="myModal_1_2" class="modal_1_2">
+                      <img class="modal-content_1_2" id="img01_1_2" />
+                    </div>
+                    <!--
+                    fine zoom
+                    -->
+                    <h5
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Demonte Servizi </i>
+                    </h5>
+                  </div>
+                  <!-- CAR -->
+                  <div class="w3-col s4">
+                    <!--
+                    Inizio zoom
+                    -->
+                    <img
+                      id="myImg_1_3"
+                      src="image\LoghiSponsorStraValEsturo\CAR_1000x1000.png"
+                      width="70px"
+                      height="70px"
+                    />
+                    <div id="myModal_1_3" class="modal_1_3">
+                      <img class="modal-content_1_3" id="img01_1_3" />
+                    </div>
+                    <!--
+                    fine zoom
+                    -->
+                    <h5
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> CAR </i>
+                    </h5>
+                  </div>
+                  <!--Fine Prima Riga 1-->
                 </div>
-                <div class="w3-col s4">
-                  <img class="zoom" src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 70px; width: 70px;">
-                  <h5 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h5>
+                <div class="w3-row-padding">
+                  <!--Seconda riga 1-->
+                  <!-- La Censa -->
+                  <div class="w3-col s4">
+                   <!--
+                    Inizio zoom
+                    -->
+                    <img
+                      id="myImg_2_1"
+                      src="image\LoghiSponsorStraValEsturo\LaCensa_1000x1000.png"
+                      width="70px"
+                      height="70px"
+                    />
+
+                    <!-- The Modal -->
+                    <div id="myModal_2_1" class="modal_2_1">
+                      <img class="modal-content_2_1" id="img01_2_1" />
+                    </div>
+
+                    <!--
+                    fine zoom
+                    -->
+                    <h5
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> La Censa </i>
+                    </h5>
+                  </div>
+                  <!-- Pasticceria Agnello -->
+                  <div class="w3-col s4">
+                    <!--
+                    Inizio zoom
+                    -->
+                    <img
+                      id="myImg_2_2"
+                      src="image\LoghiSponsorStraValEsturo\PasticceriaAgnello_1000x1000.png"
+                      width="70px"
+                      height="70px"
+                    />
+                    <!-- The Modal -->
+                    <div id="myModal_2_2" class="modal_2_2">
+                      <img class="modal-content_2_2" id="img01_2_2" />
+                    </div>
+                    <!--
+                    fine zoom
+                    -->
+                    <h5
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Pasticceria Agnello </i>
+                    </h5>
+                  </div>
+                  <!-- Spada -->
+                  <div class="w3-col s4">
+                    <!--
+                    Inizio zoom
+                    -->
+                    <img
+                      id="myImg_2_3"
+                      src="image\LoghiSponsorStraValEsturo\Spada_1000x1000.png"
+                      width="70px"
+                      height="70px"
+                    />
+                    <!-- The Modal -->
+                    <div id="myModal_2_3" class="modal_2_3">
+                      <img class="modal-content_2_3" id="img01_2_3" />
+                    </div>
+                    <!--
+                    fine zoom
+                    -->
+                    <h5
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Macelleria Spada </i>
+                    </h5>
+                  </div>
+                  <!--Fine Seconda Riga 1-->
                 </div>
-                <!--Fine Prima Riga 1-->
+                <div class="w3-row-padding">
+                  <!--Terza riga 1-->
+                  <!-- Orso Mine Pub -->
+                  <div class="w3-col s4">
+                    <!--
+                    Inizio zoom
+                    -->
+                    <img
+                      id="myImg_3_1"
+                      src="image\LoghiSponsorStraValEsturo\OrsoMinePub_1000x1000.png"
+                      width="70px"
+                      height="70px"
+                    />
+                    <!-- The Modal -->
+                    <div id="myModal_3_1" class="modal_3_1">
+                      <img class="modal-content_3_1" id="img01_3_1" />
+                    </div>
+                    <!--
+                    fine zoom
+                    -->
+                    <h5
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Orso Mine Pub </i>
+                    </h5>
+                  </div>
+                  <!-- ] 
+                  <div class="w3-col s4">
+                    <h5
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> ciao come va hhhhh </i>
+                    </h5>
+                  </div>
+                  <div class="w3-col s4">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 70px; width: 70px"
+                    />
+                    <h5
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> * </i>
+                    </h5>
+                  </div>
+                -->
+                  <!--Fine Terza Riga 1-->
+                </div>
+                <!--Partner Commerciali 0.5-->
+                <hr width="100%" />
+                <div class="w3-row-padding">
+                  <!-- Max Pizza -->
+                  <div class="w3-col s3">
+                    <img
+                      class="zoom"
+                      src="image\LoghiSponsorStraValEsturo\MaxPizza_200x200.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Max Pizza </i>
+                    </h6>
+                  </div>
+                  <!-- ] -->
+                  <div class="w3-col s3">
+                    <img
+                      class="zoom"
+                      src="image\LoghiSponsorStraValEsturo\BottegaDelPane_200x200.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Bottega Del Pane </i>
+                    </h6>
+                  </div>
+                  <div class="w3-col s3">
+                    <img
+                      class="zoom"
+                      src="image\LoghiSponsorStraValEsturo\EnricoHairStudio_200x200.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Enrico Hair Studio </i>
+                    </h6>
+                  </div>
+                  <div class="w3-col s3">
+                    <img
+                      class="zoom"
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> * </i>
+                    </h6>
+                  </div>
+                </div>
+                <div class="w3-row-padding">
+                  <!-- ] -->
+                  <div class="w3-col s3">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Sponsor migliore </i>
+                    </h6>
+                  </div>
+                  <div class="w3-col s3">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> * </i>
+                    </h6>
+                  </div>
+                  <div class="w3-col s3">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> * </i>
+                    </h6>
+                  </div>
+                  <!-- ] -->
+                  <div class="w3-col s3">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> * </i>
+                    </h6>
+                  </div>
+                </div>
+                <div class="w3-row-padding">
+                  <div class="w3-col s3">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> * </i>
+                    </h6>
+                  </div>
+                  <div class="w3-col s3">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> * </i>
+                    </h6>
+                  </div>
+                  <div class="w3-col s3">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> Sponsor fantastico </i>
+                    </h6>
+                  </div>
+                  <div class="w3-col s3">
+                    <img
+                      src="image\LoghiSponsorStraValEsturo\genericpng.png"
+                      style="height: 50px; width: 50px"
+                    />
+                    <h6
+                      class="w3-opacity client-name mbr-fonts-style display-5"
+                    >
+                      <i> test </i>
+                    </h6>
+                  </div>
+                  <!--Fine Riga-->
+                </div>
+                <!--Fine Container-->
               </div>
-              <div class="w3-row-padding">
-                <!--Seconda riga 1-->
-                <div class="w3-col s4">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 70px; width: 70px;">
-                  <h5 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h5>   
-                </div> 
-                <!-- ] -->
-                <div class="w3-col s4">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 70px; width: 70px;">
-                  <h5 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h5>
-                </div>
-                <div class="w3-col s4">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 70px; width: 70px;">
-                  <h5 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      viva la stra val esturo
-                    </i>
-                  </h5>
-                </div>
-                <!--Fine Seconda Riga 1-->
-              </div>
-              <div class="w3-row-padding">
-                <!--Terza riga 1-->
-                <div class="w3-col s4">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 70px; width: 70px;">
-                  <h5 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h5>   
-                </div> 
-                <!-- ] -->
-                <div class="w3-col s4">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 70px; width: 70px;">
-                  <h5 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      ciao come va hhhhh
-                    </i>
-                  </h5>
-                </div>
-                <div class="w3-col s4">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 70px; width: 70px;">
-                  <h5 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h5>
-                </div>
-                <!--Fine Terza Riga 1-->
-              </div>
-              <!--Partner Commerciali 0.5-->
-              <hr width="100%">
-              <div class="w3-row-padding">
-                <!-- Max Pizza -->
-                <div class="w3-col s3">
-                  <img class="zoom" src="image\LoghiSponsorStraValEsturo\MaxPizza_200x200.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      Max Pizza
-                    </i>
-                  </h6>   
-                </div> 
-                <!-- ] -->
-                <div class="w3-col s3">
-                  <img class="zoom" src="image\LoghiSponsorStraValEsturo\BottegaDelPane_200x200.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      Bottega Del Pane
-                    </i>
-                  </h6>
-                </div>
-                <div class="w3-col s3">
-                  <img class="zoom" src="image\LoghiSponsorStraValEsturo\EnricoHairStudio_200x200.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      Enrico Hair Studio
-                    </i>
-                  </h6>
-                </div>
-                <div class="w3-col s3">
-                  <img class="zoom" src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h6>   
-                </div>
-              </div>
-              <div class="w3-row-padding"> 
-                <!-- ] -->
-                <div class="w3-col s3">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      Sponsor migliore 
-                    </i>
-                  </h6>
-                </div>
-                <div class="w3-col s3">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h6>
-                </div>
-                <div class="w3-col s3">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h6>   
-                </div> 
-                <!-- ] -->
-                <div class="w3-col s3">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h6>
-                </div>
-              </div>
-              <div class="w3-row-padding">
-                <div class="w3-col s3">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h6>
-                </div>
-                <div class="w3-col s3">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      *
-                    </i>
-                  </h6>
-                </div>
-                <div class="w3-col s3">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      Sponsor fantastico
-                    </i>
-                  </h6>
-                </div>
-                <div class="w3-col s3">
-                  <img src="image\LoghiSponsorStraValEsturo\genericpng.png" style="height: 50px; width: 50px;">
-                  <h6 class="w3-opacity client-name mbr-fonts-style display-5">
-                    <i>
-                      test
-                    </i>
-                  </h6>
-                </div>
-                <!--Fine Riga-->
-              </div>
-              <!--Fine Container-->
+              <!--Fine Testo-->
             </div>
-            <!--Fine Testo-->
+            <!--Fine Shadow-->
           </div>
-          <!--Fine Shadow-->
+          <!--Fine-->
         </div>
-        <!--Fine-->
-      </div>
-      <!--
+        <!--
         Volantino
       -->
-      <img src="image\StraValEsturo_VolantinoUfficiale.png" alt="" class="ime" style="padding-top: 5%; padding-bottom: 5%; position:relative;">
-      <!--
+        <img
+          src="image\StraValEsturo_VolantinoUfficiale.png"
+          alt=""
+          class="ime"
+          style="padding-top: 5%; padding-bottom: 5%; position: relative"
+        />
+        <!--
         Iscrizioni
       -->
-      <div style="padding-top: 5%; padding-bottom: 5%; position:relative;">
-        <div class="shadow" style="position:relative;">
-          <div class="testo" style="position:relative;">
-            <h2 class="w3-opacity"><i>Iscrizioni</i></h2>
-            <h5 class="w3-opacity">Edizione 2022</h5>
-              <button onclick="window.open('https://drive.google.com/file/d/1lcfDnvclpKGm7wNeeGGzy3uyupnl6jcJ/view?usp=sharing','_blank');" class="buttonD button2">
-                <img src="image/volley.jpg" alt="#" class="insta" align="center">
+        <div style="padding-top: 5%; padding-bottom: 5%; position: relative">
+          <div class="shadow" style="position: relative">
+            <div class="testo" style="position: relative">
+              <h2 class="w3-opacity"><i>Iscrizioni</i></h2>
+              <h5 class="w3-opacity">Edizione 2022</h5>
+              <button
+                onclick="window.open('https://drive.google.com/file/d/1lcfDnvclpKGm7wNeeGGzy3uyupnl6jcJ/view?usp=sharing','_blank');"
+                class="buttonD button2"
+              >
+                <img
+                  src="image/volley.jpg"
+                  alt="#"
+                  class="insta"
+                  align="center"
+                />
                 <p>Pallavolo</p>
               </button>
-              <button onclick="window.open('https://drive.google.com/file/d/1eDG9EoM1CQGiysuoCZoiPIqbzht5LmEe/view?usp=sharing','_blank');" class="buttonD button2">
-                <img src="image/calcetto.jpg" alt="#" class="insta" align="center">
+              <button
+                onclick="window.open('https://drive.google.com/file/d/1eDG9EoM1CQGiysuoCZoiPIqbzht5LmEe/view?usp=sharing','_blank');"
+                class="buttonD button2"
+              >
+                <img
+                  src="image/calcetto.jpg"
+                  alt="#"
+                  class="insta"
+                  align="center"
+                />
                 <p>Calcio a 5</p>
               </button>
               <!--
@@ -378,40 +662,262 @@
                 <p>modulo per<br>minorenni</p>
               </button>
               -->
+            </div>
           </div>
         </div>
-      </div>
-      <h3 class="w3-opacity"><i>Torneo Pallvolo Allieve "Stra Val Esturo"</i></h3>
-      <img src="image\StraValEsturo_VolantinoTorneoAllieve.png" alt="" class="ime" style="position:relative;">
-      <div style="margin-top:46px; position:relative;">
-            <button type="button" name="button" onclick="prev()" class="button button2">
-              <b><</b>
-            </button>
-            <img src="image/g1.jpg" alt="" id="slider" width="80%" height="20%">
-            <button type="button" name="button" onclick="next()" class="button button2">
-              <b>></b>
-            </button>
-      </div>
+        <h3 class="w3-opacity">
+          <i>Torneo Pallvolo Allieve "Stra Val Esturo"</i>
+        </h3>
+        <img
+          src="image\StraValEsturo_VolantinoTorneoAllieve.png"
+          alt=""
+          class="ime"
+          style="position: relative"
+        />
+        <div style="margin-top: 46px; position: relative">
+          <button
+            type="button"
+            name="button"
+            onclick="prev()"
+            class="button button2"
+          >
+            <b><</b>
+          </button>
+          <img src="image/g1.jpg" alt="" id="slider" width="80%" height="20%" />
+          <button
+            type="button"
+            name="button"
+            onclick="next()"
+            class="button button2"
+          >
+            <b>></b>
+          </button>
+        </div>
 
-
-      <!-- End Page Content -->
+        <!-- End Page Content -->
+      </div>
     </div>
-  </div>
 
     <!-- Footer -->
-    <footer class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge">
-      <p class="w3-medium">V.B.C. VALLE STURA A.S.D.<br>Via Paschero, 7 12014 DEMONTE CN
-        <br> C.F. 96040690040      P.IVA 02930590043
+    <footer
+      class="w3-container w3-padding-64 w3-center w3-opacity w3-light-grey w3-xlarge"
+    >
+      <p class="w3-medium">
+        V.B.C. VALLE STURA A.S.D.<br />Via Paschero, 7 12014 DEMONTE CN <br />
+        C.F. 96040690040 P.IVA 02930590043
       </p>
-      <a href="https://www.facebook.com/vbc.vallestura.1" target="_blank"><i class="fa fa-facebook-official w3-hover-opacity"></i></a>
-      <a href="https://www.instagram.com/30ore_demonte/" target="_blank"><i class="fa fa-instagram w3-hover-opacity"></i></a>
+      <a href="https://www.facebook.com/vbc.vallestura.1" target="_blank"
+        ><i class="fa fa-facebook-official w3-hover-opacity"></i
+      ></a>
+      <a href="https://www.instagram.com/30ore_demonte/" target="_blank"
+        ><i class="fa fa-instagram w3-hover-opacity"></i
+      ></a>
       <!--  <i class="fa fa-snapchat w3-hover-opacity"></i>
     <i class="fa fa-pinterest-p w3-hover-opacity"></i>
     <i class="fa fa-twitter w3-hover-opacity"></i>
     <i class="fa fa-linkedin w3-hover-opacity"></i>-->
-      <p class="w3-medium">Powered by <a href="https://www.w3schools.com/w3css/default.asp" target="_blank">w3.css</a></p>
+      <p class="w3-medium">
+        Powered by
+        <a href="https://www.w3schools.com/w3css/default.asp" target="_blank"
+          >w3.css</a
+        >
+      </p>
     </footer>
+    <script>
+      /*
+      // Get the modal
+      var modal = document.getElementById("myModal");
 
-</body>
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img = document.getElementById("myImg");
+      var modalImg = document.getElementById("img01");
+      var captionText = document.getElementById("caption");
+      img.onclick = function () {
+        modal.style.display = "block";
+        modalImg.src = this.src;
+        modalImg.alt = this.alt;
+        captionText.innerHTML = this.alt;
+      };
 
+      // When the user clicks on <span> (x), close the modal
+      modal.onclick = function () {
+        img01.className += " out";
+        setTimeout(function () {
+          modal.style.display = "none";
+          img01.className = "modal-content";
+        }, 400);
+      };*/
+      //------------------------------------------------------------------
+      // riga 1
+      // 1_1
+      // Get the modal
+      var modal_1_1 = document.getElementById("myModal_1_1");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img_1_1 = document.getElementById("myImg_1_1");
+      var modalImg_1_1 = document.getElementById("img01_1_1");
+      var captionText_1_1 = document.getElementById("caption_1_1");
+      img_1_1.onclick = function () {
+        modal_1_1.style.display = "block";
+        modalImg_1_1.src = this.src;
+        modalImg_1_1.alt = this.alt;
+        captionText_1_1.innerHTML = this.alt;
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      modal_1_1.onclick = function () {
+        img01_1_1.className += " out_1_1";
+        setTimeout(function () {
+          modal_1_1.style.display = "none";
+          img01_1_1.className = "modal-content_1_1";
+        }, 400);
+      };
+      //-----------------------------------------------------------------
+      // 1_2
+      // Get the modal
+      var modal_1_2 = document.getElementById("myModal_1_2");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img_1_2 = document.getElementById("myImg_1_2");
+      var modalImg_1_2 = document.getElementById("img01_1_2");
+      var captionText_1_2 = document.getElementById("caption_1_2");
+      img_1_2.onclick = function () {
+        modal_1_2.style.display = "block";
+        modalImg_1_2.src = this.src;
+        modalImg_1_2.alt = this.alt;
+        captionText_1_2.innerHTML = this.alt;
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      modal_1_2.onclick = function () {
+        img01_1_2.className += " out_1_2";
+        setTimeout(function () {
+          modal_1_2.style.display = "none";
+          img01_1_2.className = "modal-content_1_2";
+        }, 400);
+      };
+      //-----------------------------------------------------------------
+      // 1_3
+      // Get the modal
+      var modal_1_3 = document.getElementById("myModal_1_3");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img_1_3 = document.getElementById("myImg_1_3");
+      var modalImg_1_3 = document.getElementById("img01_1_3");
+      var captionText_1_3 = document.getElementById("caption_1_3");
+      img_1_3.onclick = function () {
+        modal_1_3.style.display = "block";
+        modalImg_1_3.src = this.src;
+        modalImg_1_3.alt = this.alt;
+        captionText_1_3.innerHTML = this.alt;
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      modal_1_3.onclick = function () {
+        img01_1_3.className += " out_1_3";
+        setTimeout(function () {
+          modal_1_3.style.display = "none";
+          img01_1_3.className = "modal-content_1_3";
+        }, 400);
+      };
+
+      //------------------------------------------------------------------
+      // riga 2
+      // 2_1
+      // Get the modal
+      var modal_2_1 = document.getElementById("myModal_2_1");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img_2_1 = document.getElementById("myImg_2_1");
+      var modalImg_2_1 = document.getElementById("img01_2_1");
+      var captionText_2_1 = document.getElementById("caption_2_1");
+      img_2_1.onclick = function () {
+        modal_2_1.style.display = "block";
+        modalImg_2_1.src = this.src;
+        modalImg_2_1.alt = this.alt;
+        captionText_2_1.innerHTML = this.alt;
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      modal_2_1.onclick = function () {
+        img01_2_1.className += " out_2_1";
+        setTimeout(function () {
+          modal_2_1.style.display = "none";
+          img01_2_1.className = "modal-content_2_1";
+        }, 400);
+      };
+      //-----------------------------------------------------------------
+      // 2_2
+      // Get the modal
+      var modal_2_2 = document.getElementById("myModal_2_2");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img_2_2 = document.getElementById("myImg_2_2");
+      var modalImg_2_2 = document.getElementById("img01_2_2");
+      var captionText_2_2 = document.getElementById("caption_2_2");
+      img_2_2.onclick = function () {
+        modal_2_2.style.display = "block";
+        modalImg_2_2.src = this.src;
+        modalImg_2_2.alt = this.alt;
+        captionText_2_2.innerHTML = this.alt;
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      modal_2_2.onclick = function () {
+        img01_2_2.className += " out_2_2";
+        setTimeout(function () {
+          modal_2_2.style.display = "none";
+          img01_2_2.className = "modal-content_2_2";
+        }, 400);
+      };
+      //-----------------------------------------------------------------
+      // 2_3
+      // Get the modal
+      var modal_2_3 = document.getElementById("myModal_2_3");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img_2_3 = document.getElementById("myImg_2_3");
+      var modalImg_2_3 = document.getElementById("img01_2_3");
+      var captionText_2_3 = document.getElementById("caption_2_3");
+      img_2_3.onclick = function () {
+        modal_2_3.style.display = "block";
+        modalImg_2_3.src = this.src;
+        modalImg_2_3.alt = this.alt;
+        captionText_2_3.innerHTML = this.alt;
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      modal_2_3.onclick = function () {
+        img01_2_3.className += " out_2_3";
+        setTimeout(function () {
+          modal_2_3.style.display = "none";
+          img01_2_3.className = "modal-content_2_3";
+        }, 400);
+      };
+      //-----------------------------------------------------------------
+      // 3_1
+      // Get the modal
+      var modal_3_1 = document.getElementById("myModal_3_1");
+
+      // Get the image and insert it inside the modal - use its "alt" text as a caption
+      var img_3_1 = document.getElementById("myImg_3_1");
+      var modalImg_3_1 = document.getElementById("img01_3_1");
+      var captionText_3_1 = document.getElementById("caption_3_1");
+      img_3_1.onclick = function () {
+        modal_3_1.style.display = "block";
+        modalImg_3_1.src = this.src;
+        modalImg_3_1.alt = this.alt;
+        captionText_3_1.innerHTML = this.alt;
+      };
+
+      // When the user clicks on <span> (x), close the modal
+      modal_3_1.onclick = function () {
+        img01_3_1.className += " out_3_1";
+        setTimeout(function () {
+          modal_3_1.style.display = "none";
+          img01_3_1.className = "modal-content_3_1";
+        }, 400);
+      };
+    </script>
+  </body>
 </html>
