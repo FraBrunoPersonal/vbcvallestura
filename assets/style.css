@@ -300,3 +300,28 @@ img.insta{
   width: 100px;
   height: 100px;
 }
+
+img.reg{
+  width: 65px;
+  height: 100px;
+}
+
+/*
+icona volley
+123 × 105
+*/
+
+img.volley_icon{
+  width: 117px;
+  height: 100px;
+}
+
+/*
+icona calcio a 5
+122 × 115
+*/
+
+img.calcetto_icon{
+  width: 106px;
+  height: 100px;
+}
