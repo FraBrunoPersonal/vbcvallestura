@@ -4,9 +4,9 @@
     <link rel="icon" type="image/x-icon" href="favicon.ico" />
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="assets/aos/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
         body {
@@ -26,19 +26,25 @@
             <img
               src="image/Loghi_VbcValleStura/LogoVBC_Black.png"
               style="height: 100px; width: 115px"
+              data-aos="zoom-in"
+              data-aos-duration="900"
             />
           </div>
-        <h1>News</h1>
+        <h1 
+        data-aos="fade-up"
+        data-aos-duration="800">News</h1>
     </figure>
     
     <div>
         <hr>
-        <!--Section: News of the day-->
+        <!-- Section: News of the day -->
         <div class="row gx-5">
             <div class="col-md-6 mb-4">
                 <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
                     <div class="cropper">
-                        <img src="image/NewsImage/OpenDayCompressa.jpg" class="img-fluid" />
+                        <img src="image/NewsImage/ValleSturaSportDayCompressa.jpg" class="img-fluid" 
+                        data-aos="fade-up"
+                        data-aos-duration="1000"/>
                     </div>
                     <a href="#!">
                     <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
@@ -47,15 +53,69 @@
             </div>
         
             <div class="col-md-6 mb-4">
-                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">Notizia del giorno</span>
-                <h4><strong>Al via la stagione 2023/2024 con gli Open Day</strong></h4>
-                <p class="text-muted">
+                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3" data-aos="zoom-in" data-aos-duration="1000">Notizia del giorno</span>
+                <h4 data-aos="fade-down-left" data-aos-duration="1000"><strong>Valle Stura Sport Day</strong></h4>
+                <p class="text-muted" data-aos="fade-up-left" data-aos-duration="1000">
+                    Siamo lieti di annunciare che saremo presenti alla manifestazione "Valle Stura Sport Day" 
+                    che si terrà Sabato 30 Settembre dalle ore 14 presso la Piazza Nuto Revelli di Demonte.
+                </p>
+               <!-- Button trigger modal -->
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2" data-aos="zoom-in" data-aos-duration="1000">
+                    Articolo Completo
+                </button>
+                
+                <!-- Modal -->
+                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                        <h1 class="modal-title fs-5" id="exampleModalLabel2"><b>Al via la stagione 2023/2024 con gli Open Day</b></h1>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            <img src="image/NewsImage/ValleSturaSportDayCompressa.jpg" class="img-fluid" style="padding-bottom: 15px;"/>
+                            <b>Demonte, 27/08/2023</b> - La V.B.C. Valle Stura è lieta di annunciare che sarà presente alla manifestazione 
+                            "Valle Stura Sport Day" si terrà Sabato 30 Settembre dalle ore 14 presso la Piazza Nuto Revelli di Demonte.
+                            <br>
+                            <br>
+                            Sarà un occasione unica per provare il nostro sport gratuitamente e di passare una giornata all'aria aperta.
+                            A seguire ci sarà la possibilità cenare in piazza con musica dal vivo. Tutte le informazioni sono presenti nel volantino.
+                        </div>
+                        <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+            </div>
+        </div> 
+        <!-- End-Section: News of the day-->
+        <hr>
+        <!-- Section: News of the day -->
+        <div class="row gx-5">
+            <div class="col-md-6 mb-4">
+                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
+                    <div class="cropper">
+                        <img src="image/NewsImage/OpenDayCompressa.jpg" class="img-fluid" 
+                        data-aos="fade-up" 
+                        data-aos-duration="1000"/>
+                    </div>
+                    <a href="#!">
+                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
+                    </a>
+                </div>
+            </div>
+        
+            <div class="col-md-6 mb-4">
+                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3" data-aos="zoom-in" data-aos="zoom-in" data-aos-duration="1000">Notizia del giorno</span>
+                <h4 data-aos="fade-down-left" data-aos-duration="1000"><strong>Al via la stagione 2023/2024 con gli Open Day</strong></h4>
+                <p class="text-muted" data-aos="fade-up-left" data-aos-duration="1000">
                     Presto al via la nuova stagione sportiva: gli Open Day della VBC Valle Stura 
                     promettono di essere un'esperienza straordinaria grazie alla guida di due 
                     allenatori provenienti dalla FIPAV: Valerio Bruno e Samanta Feula
                 </p>
                <!-- Button trigger modal -->
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal" data-aos="zoom-in" data-aos-duration="1000">
                     Articolo Completo
                 </button>
                 
@@ -128,56 +188,31 @@
                 </div>
             </div>
         </div>  
-        <!--Section: News of the day-->
-        <hr>
-        <!--Section: News of the day-->
-        <!-- 
-        <div class="row gx-5">
-            <div class="col-md-6 mb-4">
-                <div class="bg-image hover-overlay ripple shadow-2-strong rounded-5" data-mdb-ripple-color="light">
-                    <img src="image/NewsImage/OpenDayCompressaCut.jpg" class="img-fluid" />
-                    <a href="#!">
-                    <div class="mask" style="background-color: rgba(251, 251, 251, 0.15);"></div>
-                    </a>
-                </div>
-            </div>
-        
-            <div class="col-md-6 mb-4">
-                <span class="badge bg-danger px-2 py-1 shadow-1-strong mb-3">Notizia del giorno</span>
-                <h4><strong>Al via la stagione 2023/2024 con gli Open Day</strong></h4>
-                <p class="text-muted">
-                    Presto al via la nuova stagione sportiva: gli Open Day della VBC Valle Stura 
-                    promettono di essere un'esperienza straordinaria grazie alla guida di due 
-                    allenatori provenienti dalla FIPAV: Valerio Bruno e Samanta Feula
-                </p>
-               Button trigger modal 
-                <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal2">
-                    Articolo Completo
-                </button>
-                
-                 Modal 
-                <div class="modal fade" id="exampleModal2" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                    <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                        <h1 class="modal-title fs-5" id="exampleModalLabel2">Al via la stagione 2023/2024 con gli Open Day</h1>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                        </div>
-                        <div class="modal-body">
-                            <img src="image/NewsImage/OpenDayCompressaCut.jpg" class="img-fluid" style="padding-bottom: 15px;"/>
-                            <img src="image/NewsImage/OpenDayCompressa.jpg" class="img-fluid" style="padding-top: 15px;"/>
-                        </div>
-                        <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-                        </div>
-                    </div>
-                    </div>
-                </div>
-            </div>
-            </div>  
-        Section: News of the day
-        -->
-        
+        <!-- End-Section: News of the day -->
     </div>
+
+    <footer class="row row-cols-1 row-cols-sm-2 row-cols-md-5 py-5 my-5 border-top">
+        <div class="col" style="width: 100%;">
+            <a href="index.html" class="d-flex align-items-center mb-3 link-body-emphasis text-decoration-none">
+            <img
+                class="bi me-2" 
+                width="70" 
+                height="63.86"
+                src="image/Loghi_VbcValleStura/LogoVBC_Black.png"
+            />
+            </a>
+            <p class="text-body-secondary">&copy; 2023 V.B.C. Valle Stura</p>
+            <ul class="list-unstyled d-flex">
+                <li class="ms-3"><a class="link-body-emphasis" href="https://www.instagram.com/vbcvallestura/" target="_blank"><i class="bi bi-instagram"></i></a></li>
+                <li class="ms-3"><a class="link-body-emphasis" href="https://www.facebook.com/profile.php?id=100095199594971" target="_blank"><i class="bi bi-facebook"></i></a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- End Footer -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>
